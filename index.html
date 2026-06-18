@@ -37,6 +37,7 @@
             font-size: 1.1rem;
             color: #7f8c8d;
             font-style: italic;
+            margin-bottom: 25px;
         }
 
         .container {
@@ -81,9 +82,37 @@
             text-align: center;
             font-size: 1.2rem;
             color: #555;
-            margin: 60px 0;
+            margin: 40px 0 60px 0;
             line-height: 2;
             font-weight: 300;
+        }
+
+        /* 상단 너구리 게임 버튼 스타일 */
+        .game-btn-container {
+            margin-top: 10px;
+        }
+
+        .game-btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            text-decoration: none;
+            padding: 10px 30px;
+            border-radius: 30px;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(141, 164, 153, 0.3);
+        }
+
+        .game-btn:hover {
+            background-color: #768d82;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(141, 164, 153, 0.4);
+        }
+
+        .game-btn:active {
+            transform: translateY(0);
         }
 
         footer {
@@ -100,6 +129,9 @@
     <header>
         <h1>지연 김의 삶의 철학</h1>
         <p>알차고 즐거운, 행복한 삶을 기록하는 공간</p>
+        <div class="game-btn-container">
+            <a href="racoon/index.html" class="game-btn">너구리 게임</a>
+        </div>
     </header>
 
     <div class="container">
@@ -109,15 +141,15 @@
         </div>
 
         <section class="main-philosophy">
-            <h2>대인관계 처세법</h2>
+            <h2>인생 처세법</h2>
             <ul class="philosophy-list">
                 <li>
                     <strong>무위자연 (無爲自然)</strong>
-                    억지로 무언가를 바꾸려 하지 않고, 자연스러운 흐름에 몸을 맡깁니다. 인간관계 또한 순리대로 흐르도록 둡니다.
+                    억지로 무언가를 바꾸려 하지 않고, 자연스러운 흐름에 몸을 맡깁니다. 삶의 모든 인연과 흘러가는 과정 또한 순리대로 둡니다.
                 </li>
                 <li>
                     <strong>번뇌와 집착을 받아들여라</strong>
-                    삶에서 생겨나는 고민과 집착을 억누르기보다, 그것 또한 나의 일부임을 인정하고 유연하게 받아들입니다.
+                    살아가며 생겨나는 고민과 집착을 억누르기보다, 그것 또한 나의 일부임을 인정하고 유연하게 받아들입니다.
                 </li>
             </ul>
         </section>
